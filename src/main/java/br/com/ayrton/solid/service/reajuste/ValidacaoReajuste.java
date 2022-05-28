@@ -1,4 +1,4 @@
-package br.com.ayrton.solid.service;
+package br.com.ayrton.solid.service.reajuste;
 
 import br.com.ayrton.solid.model.Funcionario;
 
