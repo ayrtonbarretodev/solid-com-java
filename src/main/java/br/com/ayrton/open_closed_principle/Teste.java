@@ -5,12 +5,22 @@ import br.com.ayrton.open_closed_principle.modelo.Funcionario;
 import br.com.ayrton.open_closed_principle.service.CalculaSalario;
 import br.com.ayrton.open_closed_principle.service.CalculaSalarioAnalista;
 import br.com.ayrton.open_closed_principle.service.CalculaSalarioArquiteto;
+import br.com.ayrton.open_closed_principle.service.CalculaSalarioBase;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Teste {
     public static void main(String[] args) {
+
         CalculaSalarioAnalista csa = new CalculaSalarioAnalista();
         CalculaSalarioArquiteto csarq = new CalculaSalarioArquiteto();
-        CalculaSalario c = new CalculaSalario(csa,csarq);
+
+        List<CalculaSalarioBase>calculaSalarioBases = new ArrayList<>();
+        calculaSalarioBases.add(csa);
+        calculaSalarioBases.add(csarq);
+
+        CalculaSalario c = new CalculaSalario(calculaSalarioBases);
 
         Funcionario fAnalista = new Funcionario();
         fAnalista.setTipoFuncionario(TipoFuncionario.ANALISTA);
