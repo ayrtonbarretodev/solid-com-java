@@ -1,4 +1,4 @@
-package br.com.ayrton.solid_exemplo_dependency_inversion_principle.Service;
+package br.com.ayrton.solid_exemplo_dependency_inversion_principle.service;
 
 import br.com.ayrton.solid_exemplo_dependency_inversion_principle.interfaces.ILeitorArquivo;
 

@@ -1,6 +1,6 @@
 package br.com.ayrton.solid_exemplo_dependency_inversion_principle;
 
-import br.com.ayrton.solid_exemplo_dependency_inversion_principle.Service.LeituraService;
+import br.com.ayrton.solid_exemplo_dependency_inversion_principle.service.LeituraService;
 import br.com.ayrton.solid_exemplo_dependency_inversion_principle.modelo.LeitorExcel;
 import br.com.ayrton.solid_exemplo_dependency_inversion_principle.modelo.LeitorPdf;
 
